@@ -21,23 +21,6 @@
       grid-gap: 20px;
     }
 
-    .input {
-      width: 100%;
-      background: #FFFFFF;
-      background: transparent;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 26px;
-      color: rgba(61, 59, 72, 0.75);
-      border: 1px solid #DEDEDE;
-      border-radius: 5px;
-      padding: 14px 20px;
-
-      @include media(">desktop") {
-        padding: 15px 32px;
-      }
-    }
-
     .submitButton {
       background: #38CC8B;
       font-weight: 600;
@@ -50,23 +33,81 @@
       border-radius: 5px;
       border: 0;
       padding: 15px 40px;
+      cursor: pointer;
+
+      @include media(">desktop") {
+        transition: background 0.3s;
+
+        &:hover {
+          background: #77E2B3;
+        }
+      }
     }
   }
 
-  .description {
-    font-size: 11px;
-    line-height: 21px;
-    color: #BAB7D4;
-    max-width: 249px;
-    margin-top: 8px;
+  .termsAndServices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .description {
+      font-size: 11px;
+      line-height: 21px;
+      color: #BAB7D4;
+      max-width: 249px;
+      margin-top: 8px;
+
+      @include media(">desktop") {
+        max-width: initial;
+      }
+
+      a {
+        font-weight: bold;
+        color: #FF7979;
+      }
+    }
+  }
+}
+
+.inputWrapper {
+  position: relative;
+
+  &.error {
+    &::before {
+      position: absolute;
+      top: 16px;
+      right: 27px;
+      content: url("/img/icon-error.svg");
+    }
+
+    .input {
+      border: 2px solid #FF7979;
+    }
+  }
+
+  .input {
+    width: 100%;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(61, 59, 72, 0.75);
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 14px 20px;
 
     @include media(">desktop") {
-      max-width: initial;
+      padding: 15px 32px;
     }
+  }
 
-    a {
-      font-weight: bold;
-      color: #FF7979;
-    }
+  .errorMessage {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    color: #FF7979;
+    margin-top: 6px;
   }
 }

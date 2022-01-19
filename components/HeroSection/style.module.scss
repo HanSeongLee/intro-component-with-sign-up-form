@@ -5,12 +5,13 @@
   text-align: center;
   background: #FF7979 url("/img/bg-intro-mobile.png");
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   min-width: 375px;
   min-height: 1000px;
 
   @include media(">tablet") {
     background: #FF7979 url("/img/bg-intro-desktop.png") 12px 0;
+    height: 100vh;
     min-height: 800px;
   }
 

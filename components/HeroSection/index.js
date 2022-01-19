@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './style.module.scss';
-import TrialForm from "../TrialForm";
 import Container from "../Container";
+import TrialFormContainer from "../../containers/TrialFormContainer";
 
 const HeroSection = () => {
     return (
@@ -23,7 +23,7 @@ const HeroSection = () => {
                         <strong>Try it free 7 days</strong> then $20/mo. thereafter
                     </p>
 
-                    <TrialForm/>
+                    <TrialFormContainer/>
                 </div>
             </Container>
         </section>
