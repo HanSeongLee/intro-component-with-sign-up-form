@@ -7,7 +7,7 @@ const HeroSection = () => {
     return (
         <section className={styles.heroSection}>
             <Container className={styles.container}>
-                <div>
+                <div className={styles.content}>
                     <h1 className={styles.title}>
                         Learn to code by watching others
                     </h1>
@@ -18,7 +18,7 @@ const HeroSection = () => {
                         understanding how developers think is invaluable.
                     </p>
                 </div>
-                <div>
+                <div className={styles.formContainer}>
                     <p className={styles.tryItBox}>
                         <strong>Try it free 7 days</strong> then $20/mo. thereafter
                     </p>
