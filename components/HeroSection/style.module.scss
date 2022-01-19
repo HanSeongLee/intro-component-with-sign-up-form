@@ -1,0 +1,39 @@
+
+.heroSection {
+  color: #FFFFFF;
+  text-align: center;
+  background: #FF7979 url("/img/bg-intro-mobile.png");
+  width: 100vw;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 1000px;
+
+  .container {
+    display: grid;
+    grid-gap: 64px;
+    max-width: 375px;
+    margin: auto;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .tryItBox {
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 18px 66px;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,55 @@
+
+.form {
+  display: flex;
+  grid-gap: 16px;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 22px;
+
+  .input {
+    width: 100%;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(61, 59, 72, 0.75);
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 14px 20px;
+  }
+
+  .submitButton {
+    background: #38CC8B;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 0;
+    padding: 15px 40px;
+  }
+
+  .termsAndServices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -8px;
+
+    .description {
+      font-size: 11px;
+      line-height: 21px;
+      color: #BAB7D4;
+      max-width: 249px;
+
+      a {
+        font-weight: bold;
+        color: #FF7979;
+      }
+    }
+  }
+}
