@@ -8,9 +8,9 @@ const HeroSection = () => {
         <section className={styles.heroSection}>
             <Container className={styles.container}>
                 <div className={styles.content}>
-                    <h1 className={styles.title}>
+                    <h2 className={styles.title}>
                         Learn to code by watching others
-                    </h1>
+                    </h2>
                     <p className={styles.description}>
                         See how experienced developers solve problems in real-time. Watching scripted tutorials is
                         great,
